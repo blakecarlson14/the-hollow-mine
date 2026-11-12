@@ -88,7 +88,8 @@ func _ready() -> void:
 	menu = MenuList.new()
 	menu.position = Vector2(192, 112)
 	ui.add_child(menu)
-	menu.setup(["START GAME", "QUIT"])
+	# A browser tab can't be quit from inside the game, so the web build only offers Start.
+	menu.setup(["START GAME"] if OS.has_feature("web") else ["START GAME", "QUIT"])
 	menu.chosen.connect(_on_chosen)
 	var help := PixelText.new()
 	help.text = "ARROWS/WASD MOVE   SPACE/Z JUMP   ESC PAUSE"
