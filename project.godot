@@ -14,6 +14,9 @@ config/name="The Hollow Mine"
 config/description="An original 16-bit style side-scrolling platformer set in an abandoned mineshaft."
 run/main_scene="res://scenes/title.tscn"
 config/icon="res://assets/icon.png"
+boot_splash/bg_color=Color(0.03, 0.025, 0.05, 1)
+boot_splash/image="res://assets/splash.png"
+boot_splash/use_filter=false
 config/features=PackedStringArray("4.7", "Forward Plus")
 
 [autoload]

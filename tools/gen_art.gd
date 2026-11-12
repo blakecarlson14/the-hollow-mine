@@ -13,6 +13,8 @@ func _init() -> void:
 	preload("res://tools/gen_backgrounds.gd").generate()
 	print("Generating font, lights, particles...")
 	preload("res://tools/gen_misc.gd").generate()
+	print("Generating boot splash...")
+	preload("res://tools/gen_splash.gd").generate()
 	print("Generating audio...")
 	preload("res://tools/gen_audio.gd").generate()
 	print("Done.")
